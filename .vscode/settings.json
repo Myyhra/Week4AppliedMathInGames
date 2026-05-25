@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Week4AppliedMathInGames.sln"
+    "dotnet.defaultSolution": "Week4AppliedMathInGames.slnx"
 }
