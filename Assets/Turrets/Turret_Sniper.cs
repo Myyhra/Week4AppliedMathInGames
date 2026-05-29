@@ -78,7 +78,8 @@ public class Turret_Sniper : Turret_Detector
         Debug.Log($"isShooting");
         var targetDir = (target.transform.position - transform.position).normalized;
         var angle = Mathf.Atan2(targetDir.x, targetDir.z) * Mathf.Rad2Deg;
-        model.transform.rotation = Quaternion.Slerp(model.transform.rotation, Quaternion.Euler(0, angle, 0), Time.deltaTime * rotationSpeed);
+        // model.transform.rotation = Quaternion.Slerp(model.transform.rotation, Quaternion.Euler(0, angle, 0), Time.deltaTime * rotationSpeed);
+        model.transform.rotation = Quaternion.RotateTowards(model.transform.rotation, Quaternion.LookRotation(targetDir), Time.deltaTime * rotationSpeed);
         StartCoroutine(ShootDelay(targetDir));
         
     }

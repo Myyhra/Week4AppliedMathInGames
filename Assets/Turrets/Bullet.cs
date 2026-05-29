@@ -9,14 +9,6 @@ public class Bullet : MonoBehaviour
     public Vector3 direction;
     public float speed;
     public float getHitRange = 1f;
-    void Start()
-    {
-        
-    }
-
-    void OnEnable()
-    {
-    }
 
     void Update()
     {

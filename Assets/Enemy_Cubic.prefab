@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5ab7bba076958f40aa61d78e6fc05b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemies_Cubic
-  duration: 20
+  duration: 8
   _spawn: {fileID: 0}
   _anchor: {fileID: 0}
   _anchor2: {fileID: 0}
